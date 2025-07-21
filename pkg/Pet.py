@@ -57,7 +57,9 @@ class Pet(Animal):
         Returns:
             int: The age of the pet.
         """
-        return -1
+
+        input("What is the age of your pet?")
+        return self.age
 
     @age.setter
     def age(self, value: int) -> None:
@@ -70,6 +72,7 @@ class Pet(Animal):
         Returns:
             None
         """
+        self.age = value
         pass
 
     # Owner property
