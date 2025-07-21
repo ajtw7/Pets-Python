@@ -13,7 +13,7 @@ class Pet(Animal):
         Returns:
             None
         """
-        
+
         self.name = name
         self.age = age
         pass
@@ -22,13 +22,16 @@ class Pet(Animal):
 
     @property
     def name(self) -> str:
+        
         """
         Get the name of the pet.
 
         Returns:
             str: The name of the pet.
         """
-        return ""
+
+        input("What is the name of your Pet?")
+        return self.name
 
     @name.setter
     def name(self, value: str) -> None:
@@ -41,6 +44,7 @@ class Pet(Animal):
         Returns:
             None
         """
+        self.name = value
         pass
 
     # Age property
